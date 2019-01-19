@@ -1,0 +1,14 @@
+.onshow {
+    height: auto;
+    width: 50%;
+    border-radius: 2%;
+    background-color: aquamarine;
+    float: left;
+}
+.offshow { 
+    height: auto;
+    width: 50%;
+    border-radius: 50%;
+    background-color: chartreuse;
+    float: left;
+}

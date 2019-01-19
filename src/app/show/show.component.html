@@ -1,0 +1,40 @@
+<p>
+  <br/>
+  show works!
+  <br/>
+  <!-- cach 1 -->
+  <img src="{{image}}"/>
+  <br/>
+  <img [src]="image"/>
+  <!-- click : event call function in class .ts -->
+<br/>
+</p>
+  <!-- set class dynamic -->
+<div [class]="values =='turn on'?'onshow':'offshow'">
+  <!-- property in class duoc tham chieu ra html -->
+  <img src="{{light}}" />  
+  <br/>
+  <button (click)="goInput()" >{{values}}</button>
+</div>
+ <!-- get object of hero -->
+<br/> hero is : {{hero1.id}} and {{hero1.name}}
+<br/>
+ two-way binding :
+<input [(ngModel)]="hero1.id" placeholder="hero1.id">
+<br/>
+
+su dung binding : *ngif
+<div *ngIf="check" style="background-color: aquamarine; height: 100px; width: 50%; float: right">
+  den sang
+</div>
+ <!-- cac component co the goi lan nhau  -->
+  <!-- truyen value tu 1 component -> component khac  -->
+  <!-- xval : parameter in form-input, check: parameter in show -->
+ <!-- component con -->
+<app-form-input [xval]="check"></app-form-input>
+
+<!-- component con goi event trong component cha  de processing -->
+<app-form-input (nameEvent)="exchangvalue($event)"></app-form-input>
+<br/>
+{{exchange}}
+

@@ -1,0 +1,41 @@
+<br/>
+    <!-- truyen value of option -> valueSelect thong qua ngModel -->
+<select [(ngModel)]='valueSelect'>
+  <option value="all">all</option>
+  <option value="1">1</option>
+  <option value="2">2</option>
+</select>
+
+<br/>
+{{valueSelect}}
+<br/>
+<p>
+
+  input-hero:
+</p>
+<br/>
+ <!-- get value from input -> property in class of file.ts -->
+id hero: <input placeholder="input id" [(ngModel)]="id1"/>
+<br/>
+name hero: <input placeholder="input name" [(ngModel)]="name1" />
+<br/>
+<button (click)="add()" >add</button>
+<br>
+Show list Hero:
+<br/>
+  <!-- loop for element object -->
+   <!-- get div elemet in list  -->
+<div  [class]="object.id%2==0 ?'div1' :'div2'"  *ngFor="let object of list" >
+  <h1 *ngIf="object.id%2==0" [class]="'text1'">
+     <a routerLink="/detail/{{object.id}}">{{object.id}} and {{object.name}} </a>
+ 
+    </h1>
+     <!-- truyen parameter vao function  -->
+    <h1 *ngIf="object.id%2!=0"  [class]="'text2'" > 
+      <!-- link with value  -->
+    <a routerLink="/detail/{{object.id}}">{{object.id}} and {{object.name}} </a>
+  
+       </h1>
+       <button (click)="delete(object.id)">Delete</button>
+</div>
+

@@ -1,0 +1,17 @@
+<p>
+  <br/>
+  <!--  set $event : chinh xac -->
+  enter your name: <input (keyup)="inputvalue($event)"/>
+  <br>
+  Name is: {{name}}
+  <br/>
+  
+  <!-- bat buoc phai them event keyup -->
+  enter with value with event keyup.enter
+  <br/>
+  <!-- keyup.enter -->
+  <input #testval  (keyup.enter)="inputvalue()" />
+  <br/> show {{ testval.value }}
+</p>
+<br/>
+{{xval}}

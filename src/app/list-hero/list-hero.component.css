@@ -1,0 +1,25 @@
+.div1{
+    height: auto;
+    width: 40%;
+    background-color: darkgoldenrod;
+    font-style: italic;
+    float: right;
+}
+
+.div2{
+    height: auto;
+    width: 40%;
+    background-color: darkgreen;
+    font-style: oblique;
+    float: right;
+}
+.text1{
+    font-size: 20px;
+    color: brown;
+    font-style: oblique;
+}
+.text2{
+    font-size: 20px;
+    color:cornflowerblue;
+    font-style: initial;
+}
